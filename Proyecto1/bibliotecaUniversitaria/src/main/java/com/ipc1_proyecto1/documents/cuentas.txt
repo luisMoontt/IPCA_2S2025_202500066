@@ -1,0 +1,5 @@
+operador1;Carlos López;121212;
+operador2;María García;343434;
+202500076;Noely Solorzano;676767;Arquitectura;3;1000, 1001, 1002;
+202500067;Jorge Ito;898989;Medicina;0;null;
+202500069;Pedro Ruiz;505050;Derecho;2;1002,1001;

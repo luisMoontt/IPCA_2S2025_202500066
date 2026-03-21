@@ -9,24 +9,30 @@ public class User {
    private String password; 
    private String career; // SOLO PARA ESTUDIANTES
    private int rol;
-   private int loanFine; // SOLO PARA ESTUDIANTES
-   private String[] bookLoans = new String[3]; // SOLO PARA ESTUDIANTES
+   private int fine; // SOLO PARA ESTUDIANTES
+   private String[] loans = new String[3]; // SOLO PARA ESTUDIANTES
    
-   public User(String userName, String fullName, String password, String career, int rol, int loanFine, String[] bookLoans) {
+   public User(String userName, String fullName, String password, String career, int rol, int fine, String[] loans) {
        this.userName = userName;
        this.fullName = fullName;
        this.password = password;
        this.career = career;
        this.rol = rol;
-       this.loanFine = loanFine;
-       this.bookLoans = bookLoans;
+       this.fine = fine;
+       this.loans = loans;
    }
   public User(String userName, String fullName, String password, int rol) {
         this.userName = userName;
         this.fullName = fullName;
         this.password = password;
         this.rol = rol;
-    } 
+    }
+
+    public User(String userName, String password, int rol) {
+        this.userName = userName;
+        this.password = password;
+        this.rol = rol;
+    }
 
     public String getUserName() {
         return userName;
@@ -47,13 +53,13 @@ public class User {
     public int getRol() {
         return rol;
     }
-
-    public int getLoanFine() {
-        return loanFine;
+    
+    public int getFine() {
+        return fine;
     }
-
-    public String[] getBookLoans() {
-        return bookLoans;
+    
+    public String[] getLoans() {
+        return loans;
     }
 
     public void setUserName(String userName) {
@@ -76,12 +82,12 @@ public class User {
         this.rol = rol;
     }
 
-    public void setLoanFine(int loanFine) {
-        this.loanFine = loanFine;
+    public void setFine(int fine) {
+        this.fine = fine;
     }
 
-    public void setBookLoans(String[] bookLoans) {
-        this.bookLoans = bookLoans;
+    public void setLoans(String[] loans) {
+        this.loans = loans;
     }
 
 }
