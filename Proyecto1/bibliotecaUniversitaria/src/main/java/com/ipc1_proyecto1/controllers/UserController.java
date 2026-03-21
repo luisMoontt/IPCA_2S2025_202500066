@@ -163,7 +163,7 @@ public class UserController {
     
     // PRINNNNNNNTTTTTTTTTTTTTT /////////////////
     public void saveUsersToFile() {
-        String filePath = "src/main/java/com/ipc1_proyecto1/documents/cuentas.txt";
+        String filePath = "../src/main/java/com/ipc1_proyecto1/documents/cuentas.txt";
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(filePath))) {
             for (int i = 0; i < totalUsers; i++) {
                 if (users[i].getRol() == 2) {

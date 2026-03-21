@@ -168,7 +168,7 @@ public class LoanController {
     }
     // PRINNNNNNNTTTTTTTTTTTTTT /////////////////
     public void saveLoansToFile() {
-        String filePath = "src/main/java/com/ipc1_proyecto1/documents/prestamos.txt";
+        String filePath = "../src/main/java/com/ipc1_proyecto1/documents/prestamos.txt";
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(filePath))) {
             
             for (int i = 0; i < totalLoans; i++) {

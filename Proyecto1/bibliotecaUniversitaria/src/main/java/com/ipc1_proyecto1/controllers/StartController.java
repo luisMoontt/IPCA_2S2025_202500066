@@ -17,11 +17,11 @@ public class StartController{
     
     public void startSystem(){
         createAdmin();
-        loadUsersFromFile("src/main/java/com/ipc1_proyecto1/documents/cuentas.txt", u_controller);
+        loadUsersFromFile("../src/main/java/com/ipc1_proyecto1/documents/cuentas.txt", u_controller);
         printAccounts();
         loadBooks();
         printBooks();
-        loadLoansFromFile("src/main/java/com/ipc1_proyecto1/documents/prestamos.txt", l_controller);
+        loadLoansFromFile("../src/main/java/com/ipc1_proyecto1/documents/prestamos.txt", l_controller);
         printLoans();
         l_controller.updateLoanStates();
         printLoans();
